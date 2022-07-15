@@ -87,12 +87,20 @@ const targetArrayInGivenOrder = (numsArr, indexArr) => {
   let targetArr=[];
   let n;
   for (let i = 0; i < numsArr.length; i++){
-   
    n=indexArr[i]
    targetArr[i]=numsArr[n]
     }
   return targetArr;
 };
+// another solution
+// const targetArrayInGivenOrder = (numsArr, indexArr) => {
+//   let targetArr=[];
+//   numsArr.forEach((elem, index) => {
+//     targetArr.splice(index, 0, numsArr[indexArr[index]]);
+// });
+
+//   return targetArr;
+// };
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
